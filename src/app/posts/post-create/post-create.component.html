@@ -1,0 +1,37 @@
+<div class="container-fluid">
+<h3 align="center">Expensive</h3>
+<hr>
+  <div class="row">
+    <div class="col-md-5">
+        <div class="card">
+          <div class="card-header">Budget Overview</div>
+          <div class="card-body">
+            <p align="center"><img src="assets/graph1.png" style="height:200px"></p>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header">Category Wise split</div>
+            <p align="center"><img src="assets/graph2.jpg" style="height:230px"></p>
+        </div>
+      </div>
+  </div>
+<br><br>
+  <div class="card">
+    <div class="card-body">
+      <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+      <input type="text" [(ngModel)]="enteredTitle"  name="enteredTitle" placeholder="greocery">
+    <input type="text" [(ngModel)]="enteredTitl"  name="enteredTitl"  placeholder="item name">
+      <input type="text" [(ngModel)]="enteredTit"  name="enteredTit"  placeholder="Amount">
+      <input type="text" [(ngModel)]="enteredTi"  name="enteredTi"  placeholder="Expense date">
+      <br><br>
+      <button (click)="onAddPost()">Add</button>
+      </form>
+      </div>
+  </div>
+</div>
+<hr>
+
